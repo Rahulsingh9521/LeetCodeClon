@@ -29,4 +29,34 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-# How to setup
+# Project Setup Guide
+
+A brief guide on setting up the database, backend, and frontend for the project.
+
+## Table of Contents
+
+- [Setup](#setup)
+  - [Database](#database)
+  - [Backend](#backend)
+  - [Frontend](#frontend)
+
+## Setup
+
+1. **Install Docker:**
+   - https://docs.docker.com/engine/install/
+
+2. **Install Maven:**
+   - Linux: `sudo apt update, sudo apt install maven`
+   - mac: `brew install maven`
+   - window: https://maven.apache.org/install.html
+   - java: 17v
+   - Nodejs: 21.4
+   - Mongo-campass: https://www.mongodb.com/try/download/compass (1.41 stable)
+
+3. **Install MongoDB Docker Image:**
+   - pull image by `docker pull mongo`
+   - run the imge `docker run -p 8081:27017 --name leetCodeDB -d mongo:latest` 
+
+4. **Start Project:**
+   - FrontEnd : `npm run dev`
+   - BackEnd : `mvn clean install, java -jar target/ROOT.jar`
