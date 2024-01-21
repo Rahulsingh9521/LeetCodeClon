@@ -1,4 +1,3 @@
-import './App.css';
 import MainPage from './pjt/pages/mainPage';
 import { createTheme } from '@mui/system';
 
