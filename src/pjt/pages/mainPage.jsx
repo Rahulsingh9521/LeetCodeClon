@@ -1,12 +1,18 @@
 import React from "react";
-import ProblemParent from "./problemParent";
+import Navbar from './Navbar.jsx'
+import Problems from './Problems.jsx'
+import Footer from './Footer.jsx'
+
+// const Page = styled.div``;
+
 
 const MainPage = () => {
     return (
-        <div>
-            it's main page of leetcode
-            <ProblemParent/>
-        </div>
+            <div>
+                <Navbar/>
+                <Problems/>
+                <Footer/>
+            </div>
     )
 }
 export default MainPage;
