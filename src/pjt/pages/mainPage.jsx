@@ -1,5 +1,4 @@
 import React from "react";
-// import styled from "styled-components";
 import Navbar from './Navbar.jsx'
 import Problems from './Problems.jsx'
 import Footer from './Footer.jsx'
