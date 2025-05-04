@@ -24,7 +24,15 @@ function LoginPage() {
       email: userName,
       password: passWord,
     };
-    login.authenticate(payload).then((res) => {});
+    login.authenticate(payload).then((res) => {
+      console.log("🚀 ~ submitHandler ~ res:", res);
+      if (res.status === 200) {
+        alert("Login successful");
+        // Redirect to the home page or perform any other action
+      } else {
+        alert("Login failed");
+      }
+    });
   };
 
   return (
