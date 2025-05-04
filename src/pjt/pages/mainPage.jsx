@@ -8,11 +8,11 @@ import Footer from './Footer.jsx'
 
 const MainPage = () => {
     return (
-            <div>
-                <Navbar/>
-                <Problems/>
-                <Footer/>
-            </div>
+        <div>
+            <Navbar/>
+            <Problems/>
+            <Footer/>
+        </div>
     )
 }
 export default MainPage;
