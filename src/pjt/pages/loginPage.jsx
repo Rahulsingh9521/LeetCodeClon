@@ -15,22 +15,19 @@ function LoginPage() {
     } else if (name === "passWord") {
       setPassWord(value);
     }
-
-    console.log(userName, passWord);
   };
 
   const submitHandler = () => {
     const payload = {
-      email: userName,
+      username: userName,
       password: passWord,
     };
+
     login.authenticate(payload).then((res) => {
-      console.log("🚀 ~ submitHandler ~ res:", res);
-      if (res.status === 200) {
-        alert("Login successful");
-        // Redirect to the home page or perform any other action
-      } else {
-        alert("Login failed");
+      console.log("🚀 ~ handlChangeInput ~ res:", res);
+      if (res.status === 200 && res.data.token) {
+        localStorage.setItem("authToken", res.data.token);
+        console.log("Token saved to local storage");
       }
     });
   };
