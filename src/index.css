@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+/* 1️⃣ Make the viewport elements fill the window */
+html,
+body,
+#root {
+  height: 100%;      /* Let them stretch */
+  margin: 0;         /* Remove default <body> margin */
+}
+
+/* 2️⃣ Optional: flex container for app‑wide layouts */

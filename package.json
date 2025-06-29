@@ -2,11 +2,21 @@
   "name": "leetcodeclon",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
   "dependencies": {
-    "@emotion/react": "^11.11.3",
-    "@emotion/styled": "^11.11.0",
-    "@mui/icons-material": "^5.15.5",
-    "@mui/material": "^5.15.5",
+    "@eslint/js": "9.30.0",
+    "@vitejs/plugin-react": "4.6.0",
+    "eslint": "^9.29.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.20",
+    "globals": "^16.2.0",
+    "@tailwindcss/vite": "^4.1.11",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -19,13 +29,8 @@
     "react-scripts": "5.0.1",
     "redux": "^5.0.1",
     "styled-components": "^6.1.8",
-    "web-vitals": "^2.1.4"
-  },
-  "scripts": {
-    "start": "PORT=8080 react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "tailwindcss": "^4.1.11",
+    "vite": "^7.0.0"
   },
   "eslintConfig": {
     "extends": [
