@@ -32,7 +32,7 @@ const Navbar = () => {
       </a>
       <ul className="relative flex h-full items-center gap-8 ml-10 ">
         <li className="style text-gray-500 hover:text-gray-950 cursor-pointer">
-          Problem
+          <a href="/problemset"> Problem </a>
         </li>
         <li className="style text-gray-500 hover:text-gray-950 cursor-pointer">
           Content
