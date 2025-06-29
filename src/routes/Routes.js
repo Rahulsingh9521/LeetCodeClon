@@ -1,11 +1,12 @@
-import React from "react";
 import { createBrowserRouter } from "react-router-dom";
 import Login from "@pjt/pages/loginPage";
-import NotFoundPage from "../pjt/pages/NotFoundPage";
+import NotFoundPage from "@pjt/pages/NotFoundPage";
+import ProblemParent from "@pjt/pages/problemParent";
 
 const Routers = createBrowserRouter([
-  //   { path: "/", Component: App }, // <-- note Component, not element
+  { path: "/", Component: Login }, // <-- note Component, not element
   { path: "/login", Component: Login },
+  { path: "/problemset", Component: ProblemParent },
   { path: "*", Component: NotFoundPage },
 ]);
 

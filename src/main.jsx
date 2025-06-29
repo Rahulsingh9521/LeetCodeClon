@@ -8,7 +8,7 @@ import router from "./routes/Routes";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 // root.config.globalProperties.$axios = axiosInstance;
 root.render(
-  <div className="w-full h-full">
+  <div className="h-screen">
     <Navbar />
     <RouterProvider router={router} />
   </div>
