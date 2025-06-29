@@ -1,17 +1,19 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import reportWebVitals from "./reportWebVitals";
-import Routes from "./routes/Routes";
+import { RouterProvider } from "react-router-dom";
+import "./index.css";
+import Navbar from "@pjt/pages/Navbar";
+import router from "./routes/Routes";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 // root.config.globalProperties.$axios = axiosInstance;
 root.render(
-  <React.StrictMode>
-    <Routes />
-  </React.StrictMode>
+  <div className="w-full h-full">
+    <Navbar />
+    <RouterProvider router={router} />
+  </div>
 );
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

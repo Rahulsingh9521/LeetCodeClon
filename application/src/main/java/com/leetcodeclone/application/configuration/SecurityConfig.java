@@ -36,6 +36,7 @@ public class SecurityConfig {
                 .authorizeRequests() // not authorizeHttpRequests()
                 .antMatchers("/api/login").permitAll()
                 .antMatchers("/api/createUser").permitAll()
+                        .antMatchers("/swagger-ui/**", "/v3/api-docs/**", "/swagger-ui.html").permitAll()
                 .anyRequest().authenticated()
                 .and()
                 .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
@@ -47,7 +48,7 @@ public class SecurityConfig {
     @Bean
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration config = new CorsConfiguration();
-        config.setAllowedOrigins(List.of("http://localhost:8080")); // Replace with your frontend URL
+            config.setAllowedOrigins(List.of("http://localhost:5173")); // Replace with your frontend URL
         config.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
         config.setAllowedHeaders(List.of("*"));
         config.setAllowCredentials(true); // Optional depending on use case
