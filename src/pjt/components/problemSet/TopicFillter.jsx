@@ -8,7 +8,6 @@ const topics = [
   "Math",
   "Sorting",
   "Greedy",
-  "Greedy",
 ];
 
 const TopicFilter = ({ onFilterChange }) => {
