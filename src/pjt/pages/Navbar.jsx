@@ -25,7 +25,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="bg-white sticky top-0 flex w-full h-[50px] items-center justify-center">
+    <div className="flex h-12 bg-white sticky items-center justify-center">
       <a href="/login" className="flex items-center cursor-pointer">
         <img className="w-[30px]" src={leetCodeLogo} />
         <p className="pl-2 font-mono font-bold">Clone</p>
