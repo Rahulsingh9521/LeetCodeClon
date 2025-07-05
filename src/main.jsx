@@ -8,7 +8,7 @@ import router from "./routes/Routes";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 // root.config.globalProperties.$axios = axiosInstance;
 root.render(
-  <div className="h-screen">
+  <div className="grid grid-rows-[auto_1fr] h-screen">
     <Navbar />
     <RouterProvider router={router} />
   </div>
