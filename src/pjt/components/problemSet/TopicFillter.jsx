@@ -38,9 +38,9 @@ const TopicFilter = ({ onFilterChange }) => {
         <span className="w-6 z-2 bg-gradient-to-l from-[#1a1a1a] to-[#1a1a1a00]"></span>
         <span
           onClick={() => setExpanded((pre) => !pre)}
-          className="bg-neutral-900 text-neutral-500 hover:text-neutral-200"
+          className="bg-neutral-900 text-neutral-500 cursor-pointer"
         >
-          Expend ↓
+          {expanded ? "Collapse ^ " : "Expend ↓"}
         </span>
       </div>
     </div>
