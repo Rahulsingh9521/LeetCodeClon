@@ -3,7 +3,7 @@ import algorith from "@assets/problemSet/algorithms.svg";
 import database from "@assets/problemSet/database.svg";
 export function Chips() {
   return (
-    <div className="flex flex-wrap gap-2 p-2 justify-center">
+    <div className="h-[50px] flex gap-2 p-2 items-center justify-center">
       <div className="bg-white w-30 rounded-full text-center">
         <img src={allTopics} alt="All Topics" className="inline-block" />
         <span className="text-black">All Topics</span>

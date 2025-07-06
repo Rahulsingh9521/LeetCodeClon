@@ -3,6 +3,7 @@ import HomePageCarousal from "@pjt/components/problemset/HomePageCarousal";
 import TopicFilter from "@pjt/components/problemSet/TopicFillter";
 import { Chips } from "../components/problemSet/chips";
 import LeftSideSection from "@pjt/components/problemSet/LeftSideSection";
+import { ProblemList } from "@pjt/components/problemSet/ProblemList";
 
 function ProblemParent() {
   return (
@@ -16,16 +17,11 @@ function ProblemParent() {
         <TopicFilter />
 
         {/* // topic fillter with chips  */}
-        <div className="h-10 flex justify-center items-center text-white">
-          <Chips />
-        </div>
-
-        <hr />
+        <Chips />
+        <div className="border-b-[0.5px] border-neutral-200 opacity-50"></div>
 
         {/* problem list ( search,sort, solved, rendom)} */}
-        <div className="h-90 border-1 mt-2 flex justify-center items-center text-white">
-          <p className="">Problem List</p>
-        </div>
+        <ProblemList />
       </div>
       <div className="hidden lg:block  bg-neutral-800 p-4">
         <div className="h-1/2 border-3 rounded border-indigo-500 mt-3">
